@@ -1,5 +1,5 @@
 body {
-    font-family: Source Code Pro;
+    font-family: Source Code Pro, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-    font-family: Yu Gothic Medium;
+    font-family: Yu Gothic Medium, monospace;
     display: flex;
     height: 80px;
     justify-content: space-between; /* Align items to the left */
@@ -23,16 +23,12 @@ body {
 .nav-item {
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 20px 20px;
     font-size: 17px;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-item:hover {
-    color: #64cc68; /* White text on hover */
-}
-
-.nav-item:hover {
+.nav-left a:hover {
     color: #64cc68; /* White text on hover */
 }
 
@@ -50,9 +46,10 @@ body {
     transition: background-color 0.3s, color 0.3s; /* Transition for smooth hover effect */
 }
 
-.search-form input[type="text"]:hover {
-    border-color: #4CAF50; /* Green background on hover */
-    /*color: white; !* White text on hover *!*/
+.search-form input[type="text"] :focus {
+    background-color: blue;
+    border-color: #0e9d9d; /* Green background on hover */
+    color: #ef0000; /* White text on hover */
 }
 
 main {
@@ -79,9 +76,8 @@ footer {
 }
 
 
-
 .sub-navbar {
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", serif;
     height: 25px;
     display: flex;
     justify-content: flex-start;
@@ -98,7 +94,39 @@ footer {
 }
 
 .sub-nav-item:hover {
-    border-color:#010b10 ;
-    color: #010b10;
+    border-color: #010b10;
+    color: #000000;
 }
 
+.nav-right .nav-item:hover {
+    border-radius: 50px;
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+.nav-right .nav-item {
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.login-register {
+    display: inline-block;
+    padding: 0 10px;
+    border: 3px solid #eeeeee;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.register {
+    text-decoration: none;
+    padding: 0 10px;
+}
+.register:hover{
+    border-radius: inherit;
+    background-color: #64cc68;
+}
+.login {
+    text-decoration: none;
+    padding: 0 10px;
+}
