@@ -14,7 +14,7 @@ body {
     font-family: Yu Gothic Medium, monospace;
     display: flex;
     height: 80px;
-    justify-content: space-between; /* Align items to the left */
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     flex-wrap: wrap;
@@ -29,13 +29,13 @@ body {
 }
 
 .nav-left a:hover {
-    color: #64cc68; /* White text on hover */
+    color: #64cc68;
 }
 
 .search-form {
     display: inline-block;
     align-items: center;
-    margin-left: 20px; /* Space between the last nav item and the search bar */
+    margin-left: 20px;
 }
 
 .search-form input[type="text"] {
@@ -43,16 +43,17 @@ body {
     font-size: 17px;
     border: none;
     border-radius: 6px;
-    transition: background-color 0.3s, color 0.3s; /* Transition for smooth hover effect */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .search-form input[type="text"] :focus {
     background-color: blue;
-    border-color: #0e9d9d; /* Green background on hover */
-    color: #ef0000; /* White text on hover */
+    border-color: #0e9d9d;
+    color: #ef0000;
 }
 
 main {
+    font-family: Arial, serif;
     padding: 60px 20px;
 }
 
@@ -122,11 +123,195 @@ footer {
     text-decoration: none;
     padding: 0 10px;
 }
-.register:hover{
+
+.register:hover {
     border-radius: inherit;
     background-color: #64cc68;
 }
+
 .login {
     text-decoration: none;
     padding: 0 10px;
 }
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    color: #555;
+}
+
+.card-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #45a049;
+}
+
+.typing-container {
+    font-family: Vivaldi, serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-text{
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+}
+
+
+.section {
+    width: 70%;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.html-section {
+    background-color: #d1ffd6;
+}
+
+.css-section {
+    background-color: #fff1b5;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.container button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.example {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+pre code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: 52%;
+    background-color: lightblue;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.little-card {
+    text-align: center;
+    flex-basis: 35%;
+    background-color: #f6a7ee;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.little-card:hover {
+    background-color: #b185f8;
+}
+
+.end-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+.code-editor{
+    width: 75%;
+    align-content: center;
+}
+
+.end-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
